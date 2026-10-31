@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TL Sales Performance</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%231f6feb'/><path d='M7 20l6-8 5 5 7-9' stroke='white' stroke-width='3' fill='none' stroke-linecap='round'/></svg>">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo"><svg viewBox="0 0 32 32"><path d="M5 22l7-9 6 6 9-12" stroke="currentColor" stroke-width="3.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div>
+        <div class="brand-title" id="appName">TL Sales Performance</div>
+        <div class="brand-sub" id="appSub">Nền tảng Quản trị mục tiêu kinh doanh – Phòng Kinh doanh</div>
+      </div>
+    </div>
+    <nav class="journey" id="journey"></nav>
+    <div class="userbox" id="userbox"></div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main class="main" id="main">
+      <div class="loading" id="loading">
+        <div class="spinner"></div>
+        <div id="loadingText">Đang khởi động…</div>
+        <div class="progress"><span id="loadingBar"></span></div>
+      </div>
+    </main>
+  </div>
+
+  <div class="modal-back" id="modalBack" hidden>
+    <div class="modal" role="dialog" aria-modal="true">
+      <div class="modal-head"><h3 id="modalTitle"></h3><button class="icon-btn" id="modalClose" aria-label="Đóng">✕</button></div>
+      <div class="modal-body" id="modalBody"></div>
+      <div class="modal-foot" id="modalFoot"></div>
+    </div>
+  </div>
+  <div class="toast" id="toast" hidden></div>
+
+  <script src="config.js"></script>
+  <script src="charts.js"></script>
+  <script src="app.js"></script>
+  <script src="modules.js"></script>
+</body>
+</html>
